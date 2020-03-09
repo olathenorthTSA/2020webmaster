@@ -1,0 +1,80 @@
+
+.benefit-flex{
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    flex-basis: auto;
+
+}
+
+
+.sideFlex{
+    display:flex;
+    flex-direction:row;
+    flex:wrap;
+    justify-content: space-around;
+    margin:0 0 20px 0;
+    height:100%;
+    width:100%;
+  
+}
+.electricFlex {
+    display:flex;
+    flex-direction:row;
+    flex:wrap;
+    margin-top:auto;
+    margin-bottom: auto;
+    height:auto;
+    width: auto;
+    justify-content: space-evenly;
+}
+.hybridFlex {
+    display:flex;
+    flex-direction:row;
+    flex:wrap;
+    margin-top:auto;
+    margin-bottom: auto;
+    justify-content: space-evenly;
+}
+.gasFlex{
+    display:flex;
+    flex-direction:row;
+    flex:wrap;
+    margin-top:auto;
+    margin-bottom: auto;
+    justify-content: space-evenly;
+}
+.procon{
+    display:flex;
+    flex-direction: column;
+    flex:wrap;
+    border:solid black;
+    border-right:hidden;
+    padding:10px;
+}
+
+.procar{
+    display:flex;
+    flex-direction: column;
+    flex:wrap;
+    border:solid black;
+    justify-content: space-evenly;
+   
+    
+}
+
+.car{
+    height:200px;
+    width: 200px;
+    margin:0;
+}
+
+.desc{
+    background:gray;
+    color:white;
+}
+
+.map{
+    width:100%;
+}
