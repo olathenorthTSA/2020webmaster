@@ -1,0 +1,100 @@
+<style>
+    .full-img {
+        position: relative;
+        display: block;
+        width: 640px;
+        height: 480px;
+    }
+
+    .overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 640px;
+        height: 480px;
+        background-color: rgba(0, 0, 0, 0);
+    }
+
+
+    .thumb-bar img {
+        display: block;
+        width: 20%;
+        float: left;
+        cursor: pointer;
+    }
+
+    img {
+        height: 200px;
+        width: 1000px;
+    }
+</style>
+
+
+
+<div class="iSlide">
+    <img src="https://cdn.pixabay.com/photo/2015/02/24/15/41/dog-647528__340.jpg">
+    <p>Caption 1</p>
+</div>
+<div class="iSlide">
+    <img
+        src="https://images.unsplash.com/photo-1494548162494-384bba4ab999?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1000&q=80">
+    <p>Caption 2</p>
+</div>
+<div class="iSlide">
+    <img src="https://images.pexels.com/photos/459225/pexels-photo-459225.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500">
+    <p>Caption 3</p>
+</div>
+<div class="iSlide">
+    <img src="https://image.shutterstock.com/image-photo/colorful-flower-on-dark-tropical-260nw-721703848.jpg">
+    <p>Caption 4</p>
+</div>
+<div class="iSlide">
+    <img src="https://cdn.pixabay.com/photo/2013/07/21/13/00/rose-165819__340.jpg">
+    <p>Caption 5</p>
+</div>
+
+<div class="thumb-bar">
+    <img class='car' onclick="currentSlide(0)" src="https://cdn.pixabay.com/photo/2015/02/24/15/41/dog-647528__340.jpg">
+    <img class='car' onclick="currentSlide(1)"
+        src="https://images.unsplash.com/photo-1494548162494-384bba4ab999?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1000&q=80">
+    <img class='car' onclick="currentSlide(2)"
+        src="https://images.pexels.com/photos/459225/pexels-photo-459225.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500">
+    <img class='car' onclick="currentSlide(3)"
+        src="https://image.shutterstock.com/image-photo/colorful-flower-on-dark-tropical-260nw-721703848.jpg">
+    <img class='car' onclick="currentSlide(4)"
+        src="https://cdn.pixabay.com/photo/2013/07/21/13/00/rose-165819__340.jpg">
+
+</div>
+
+
+
+
+<script>
+    var slideIndex = -1;
+
+
+    function showSlides(n) {
+        var i;
+        var slides = document.getElementsByClassName("iSlide");
+        for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+
+        }
+        slideIndex++;
+        if (slideIndex > slides.length - 1) { slideIndex = 0; }
+        console.log(slideIndex);
+        slides[slideIndex].style.display = "block";
+        setTimeout(showSlides, 5000);
+        console.log('end');
+    }
+
+    showSlides(slideIndex);
+
+
+    function currentSlide(n) {
+        showSlides(slideIndex = n);
+
+    }
+
+</script>
+</body>
