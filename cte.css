@@ -1,0 +1,17 @@
+body {
+}
+
+article {
+  display: inline-grid;
+  grid-template-rows: 100px 100px 100px;
+  grid-template-columns: 100px 100px 100px;
+  grid-gap: 3px;
+}
+
+section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid black;
+  font-size: 3em;
+}
