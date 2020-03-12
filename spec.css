@@ -1,0 +1,68 @@
+.topic {
+    display: flex;
+    flex-direction: row;
+    background-color: black;
+    border: solid black;
+    margin:5px;
+    padding: 5px 125px 0 5px;
+    width:100%;
+}
+
+.key {
+    
+    color: white;
+    opacity: 1;
+    display: block;
+    width: 100%;
+    transition: .5s ease;
+    backface-visibility: hidden;
+    justify-self: left;
+}
+
+.bk {
+    transition: .5s ease;
+    opacity: 0;
+    color: white;
+    margin: 0 10px;
+   
+}
+
+.topic:hover{
+    background-color: white;
+}
+
+.topic:hover .key {
+    opacity: 0.75;
+    color:black;
+}
+
+.topic:hover .bk {
+    opacity: 1;
+    color:black;
+}
+
+.spec-flex{
+    display:flex;
+    flex-direction:row;
+    flex:wrap;
+    justify-content: center;
+}
+
+.spec-flex > div{
+    text-align:left;
+    flex:wrap;
+    margin:10px;
+    padding:5px;
+}
+
+.info-flex{
+    display:flex;
+    flex-direction: column;
+}
+
+.info-flex > div{
+    margin:5px;
+    text-align:left;
+    padding:5px;
+    flex:wrap;
+}
