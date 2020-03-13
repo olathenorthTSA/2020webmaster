@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="design.html" rel="stylesheet" media="print">
+    <link href="model1.html" rel="stylesheet" media="print">
+    <link href="model2.html" rel="stylesheet" media="print">
+    <link href="model3.html" rel="stylesheet" media="print">
+    <link href="energy.html" rel="stylesheet" media="print">
+    <link href="aboutus.html" rel="stylesheet" media="print">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="modal.css">
+    <link rel="stylesheet" href="energy.css">
+    <link rel="stylesheet" href="card.css">
+    <link rel="stylesheet" href="spec.css">
+    <link rel="stylesheet" href="model.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+    <title>Janna</title>
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="design.html"><img class="logo" src="senna.png"></a>
+
+        <div>
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="model1.html">Lux <span class="sr-only"></span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="model2.html">Janna</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="model3.html">Warwick</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">TSA</a>
+                </li>
+
+                <div class="navbar-nav">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="50px" height="50px" class="myBtn mod"
+                        onclick="modl()" viewBox="0 0 30 30" role="btn" focusable="false">
+                        <title>Menu</title>
+                        <path stroke="currentColor" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"
+                            d="M4 7h22M4 15h22M4 23h22" />
+                    </svg>
+
+                    <!-- The Modal -->
+                    <div id="myModal" class="modal">
+
+                        <!-- Modal content -->
+                        <div class="modal-content">
+                            <span class="close">&times;</span>
+                            <ul>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="model1.html">Lux <span class="sr-only"></span></a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="model2.html">Janna</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="model3.html">Warwick</a>
+                                </li>
+
+                                <li class="nav-item">
+                                    <a class="nav-link" href="aboutus.html">About Us</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="energy.html">Energy</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </ul>
+
+
+
+        </div>
+        </div>
+        </div>
+    </nav>
+    <div class="jumbotron jumbotron-fluid">
+        <div class="container">
+            <center>
+                <h1 class="display-4">Janna</h1>
+            </center>
+        </div>
+    </div>
+
+
+    <div class="body">
+        <!-- <div class="wide-shot">
+            <h1>Car Animation/Wide </h1>
+        </div> -->
+
+        <div class="overview">
+            <h1>Overview</h1>
+            <div class="specs-flex">
+                <div class="feature">
+                    <div>
+                        <p class="speec" onclick="modlPr()" viewBox="0 0 30 30" role="btn" focusable="false">
+                            Price
+                            <br>
+                            <svg class="svg-icon" viewBox="0 0 20 20">
+                                <path fill="none"
+                                    d="M5.229,6.531H4.362c-0.239,0-0.434,0.193-0.434,0.434c0,0.239,0.194,0.434,0.434,0.434h0.868c0.24,0,0.434-0.194,0.434-0.434C5.663,6.724,5.469,6.531,5.229,6.531 M10,6.531c-1.916,0-3.47,1.554-3.47,3.47c0,1.916,1.554,3.47,3.47,3.47c1.916,0,3.47-1.555,3.47-3.47C13.47,8.084,11.916,6.531,10,6.531 M11.4,11.447c-0.071,0.164-0.169,0.299-0.294,0.406c-0.124,0.109-0.27,0.191-0.437,0.248c-0.167,0.057-0.298,0.09-0.492,0.098v0.402h-0.35v-0.402c-0.21-0.004-0.352-0.039-0.527-0.1c-0.175-0.064-0.324-0.154-0.449-0.27c-0.124-0.115-0.221-0.258-0.288-0.428c-0.068-0.17-0.1-0.363-0.096-0.583h0.664c-0.004,0.259,0.052,0.464,0.169,0.613c0.116,0.15,0.259,0.229,0.527,0.236v-1.427c-0.159-0.043-0.268-0.095-0.425-0.156c-0.157-0.061-0.299-0.139-0.425-0.235C8.852,9.752,8.75,9.631,8.672,9.486C8.594,9.34,8.556,9.16,8.556,8.944c0-0.189,0.036-0.355,0.108-0.498c0.072-0.144,0.169-0.264,0.292-0.36c0.122-0.097,0.263-0.17,0.422-0.221c0.159-0.052,0.277-0.077,0.451-0.077V7.401h0.35v0.387c0.174,0,0.29,0.023,0.445,0.071c0.155,0.047,0.29,0.118,0.404,0.212c0.115,0.095,0.206,0.215,0.274,0.359c0.067,0.146,0.103,0.315,0.103,0.508H10.74c-0.007-0.201-0.06-0.354-0.154-0.46c-0.096-0.106-0.199-0.159-0.408-0.159v1.244c0.174,0.047,0.296,0.102,0.462,0.165c0.167,0.063,0.314,0.144,0.443,0.241c0.128,0.099,0.23,0.221,0.309,0.366c0.077,0.146,0.116,0.324,0.116,0.536C11.509,11.092,11.473,11.283,11.4,11.447 M18.675,4.795H1.326c-0.479,0-0.868,0.389-0.868,0.868v8.674c0,0.479,0.389,0.867,0.868,0.867h17.349c0.479,0,0.867-0.389,0.867-0.867V5.664C19.542,5.184,19.153,4.795,18.675,4.795M1.76,5.664c0.24,0,0.434,0.193,0.434,0.434C2.193,6.336,2,6.531,1.76,6.531S1.326,6.336,1.326,6.097C1.326,5.857,1.52,5.664,1.76,5.664 M1.76,14.338c-0.24,0-0.434-0.195-0.434-0.434c0-0.24,0.194-0.434,0.434-0.434s0.434,0.193,0.434,0.434C2.193,14.143,2,14.338,1.76,14.338 M18.241,14.338c-0.24,0-0.435-0.195-0.435-0.434c0-0.24,0.194-0.434,0.435-0.434c0.239,0,0.434,0.193,0.434,0.434C18.675,14.143,18.48,14.338,18.241,14.338 M18.675,12.682c-0.137-0.049-0.281-0.08-0.434-0.08c-0.719,0-1.302,0.584-1.302,1.303c0,0.152,0.031,0.297,0.08,0.434H2.981c0.048-0.137,0.08-0.281,0.08-0.434c0-0.719-0.583-1.303-1.301-1.303c-0.153,0-0.297,0.031-0.434,0.08V7.318c0.136,0.049,0.28,0.08,0.434,0.08c0.718,0,1.301-0.583,1.301-1.301c0-0.153-0.032-0.298-0.08-0.434H17.02c-0.049,0.136-0.08,0.28-0.08,0.434c0,0.718,0.583,1.301,1.302,1.301c0.152,0,0.297-0.031,0.434-0.08V12.682z M18.241,6.531c-0.24,0-0.435-0.194-0.435-0.434c0-0.24,0.194-0.434,0.435-0.434c0.239,0,0.434,0.193,0.434,0.434C18.675,6.336,18.48,6.531,18.241,6.531 M9.22,8.896c0,0.095,0.019,0.175,0.058,0.242c0.039,0.066,0.088,0.124,0.148,0.171c0.061,0.047,0.13,0.086,0.21,0.115c0.079,0.028,0.11,0.055,0.192,0.073V8.319c-0.21,0-0.322,0.044-0.437,0.132C9.277,8.54,9.22,8.688,9.22,8.896 M15.639,12.602h-0.868c-0.239,0-0.434,0.195-0.434,0.434c0,0.24,0.194,0.436,0.434,0.436h0.868c0.24,0,0.434-0.195,0.434-0.436C16.072,12.797,15.879,12.602,15.639,12.602 M10.621,10.5c-0.068-0.052-0.145-0.093-0.23-0.124c-0.086-0.031-0.123-0.06-0.212-0.082v1.374c0.209-0.016,0.332-0.076,0.465-0.186c0.134-0.107,0.201-0.281,0.201-0.516c0-0.11-0.02-0.202-0.062-0.277C10.743,10.615,10.688,10.551,10.621,10.5">
+                                </path>
+                            </svg>
+                        </p>
+
+                        <!-- The Modal -->
+                        <div id="ModalPrice" class="modal">
+
+                            <!-- Modal content -->
+                            <div class="modal-contents">
+
+                                <span class="closePr">&times;</span>
+                                <div>
+                                    <p>Basic(White): $30,000</p><br>
+
+                                    <p>Basic(Red): $31,000</p><br>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="feature">
+                        <p class="speec" onclick="modlPer()" viewBox="0 0 30 30" role="btn" focusable="false">
+                            Performace
+                            <svg class="svg-icon" viewBox="0 0 20 20">
+                                <path fill="none"
+                                    d="M4.68,13.716v-0.169H4.554C4.592,13.605,4.639,13.658,4.68,13.716z M11.931,6.465
+                                c-0.307-0.087-0.623,0.106-0.706,0.432l-1.389,5.484c-0.901,0.084-1.609,0.833-1.609,1.757c0,0.979,0.793,1.773,1.773,1.773
+                                c0.979,0,1.773-0.794,1.773-1.773c0-0.624-0.324-1.171-0.812-1.486l1.377-5.439C12.422,6.887,12.239,6.552,11.931,6.465z
+                                M10.591,14.729H9.408v-1.182h1.183V14.729z M15.32,13.716c0.04-0.058,0.087-0.11,0.126-0.169H15.32V13.716z M10,3.497
+                                c-3.592,0-6.503,2.911-6.503,6.503H4.68c0-2.938,2.382-5.32,5.32-5.32s5.32,2.382,5.32,5.32h1.182
+                                C16.502,6.408,13.591,3.497,10,3.497z M10,0.542c-5.224,0-9.458,4.234-9.458,9.458c0,5.224,4.234,9.458,9.458,9.458
+                                c5.224,0,9.458-4.234,9.458-9.458C19.458,4.776,15.224,0.542,10,0.542z M15.32,16.335v0.167h-0.212
+                                c-1.407,1.107-3.179,1.773-5.108,1.773c-1.93,0-3.701-0.666-5.108-1.773H4.68v-0.167C2.874,14.816,1.724,12.543,1.724,10
+                                c0-4.571,3.706-8.276,8.276-8.276c4.57,0,8.275,3.706,8.275,8.276C18.275,12.543,17.126,14.816,15.32,16.335z">
+                                </path>
+                            </svg>
+                        </p>
+
+                        <!-- The Modal -->
+                        <div id="ModalPerform" class="modal">
+
+                            <!-- Modal content -->
+                            <div class="modal-contents">
+
+                                <span class="closePer">&times;</span>
+                                <div>
+                                    <p>Hello</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="feature">
+                        <p class="speec" onclick="modlRa()" viewBox="0 0 30 30" role="btn" focusable="false">
+                            Range
+                            <br>
+                            <svg class="svg-icon" viewBox="0 0 20 20">
+                                <path fill="none"
+                                    d="M14.584,1.617l-4.625,2.89L5.333,2.195L0.709,4.495v13.888l4.625-2.313l4.625,1.157l4.625-1.734l4.625,1.734
+                                    V3.93L14.584,1.617z M18.053,15.492l-3.469-1.157l-4.625,1.734l-4.625-1.155l-3.468,1.734V5.086l3.468-1.734l4.625,2.312
+                                    l4.625-2.891l3.469,1.734V15.492z M10.248,6.827c-0.16,0-0.29,0.163-0.29,0.363v6.781c0,0.201,0.129,0.363,0.29,0.363
+                                    c0.16,0,0.289-0.162,0.289-0.363V7.19C10.537,6.99,10.408,6.827,10.248,6.827z M5.623,5.093c-0.16,0-0.29,0.163-0.29,0.363v7.938
+                                    c0,0.201,0.129,0.363,0.29,0.363c0.16,0,0.289-0.162,0.289-0.363V5.456C5.912,5.256,5.783,5.093,5.623,5.093z M14.584,12.815
+                                    c0,0.2,0.129,0.363,0.289,0.363s0.289-0.163,0.289-0.363V4.878c0-0.2-0.129-0.364-0.289-0.364s-0.289,0.164-0.289,0.364V12.815z">
+                                </path>
+                            </svg>
+                        </p>
+
+                        <!-- The Modal -->
+                        <div id="ModalRange" class="modal">
+
+                            <!-- Modal content -->
+                            <div class="modal-contents">
+
+                                <span class="closeRa">&times;</span>
+                                <div>
+                                    <p>Hello</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="feature">
+                        <p class="speec" onclick="modlUp()" viewBox="0 0 30 30" role="btn" focusable="false">
+                            Upgrades
+                            <br>
+                            <svg class="svg-icon" viewBox="0 0 20 20">
+                                <path fill="none"
+                                    d="M10.032,8.367c-1.112,0-2.016,0.905-2.016,2.018c0,1.111,0.904,2.014,2.016,2.014c1.111,0,2.014-0.902,2.014-2.014C12.046,9.271,11.143,8.367,10.032,8.367z M10.032,11.336c-0.525,0-0.953-0.427-0.953-0.951c0-0.526,0.427-0.955,0.953-0.955c0.524,0,0.951,0.429,0.951,0.955C10.982,10.909,10.556,11.336,10.032,11.336z">
+                                </path>
+                                <path fill="none"
+                                    d="M17.279,8.257h-0.785c-0.107-0.322-0.237-0.635-0.391-0.938l0.555-0.556c0.208-0.208,0.208-0.544,0-0.751l-2.254-2.257c-0.199-0.2-0.552-0.2-0.752,0l-0.556,0.557c-0.304-0.153-0.617-0.284-0.939-0.392V3.135c0-0.294-0.236-0.532-0.531-0.532H8.435c-0.293,0-0.531,0.237-0.531,0.532v0.784C7.582,4.027,7.269,4.158,6.966,4.311L6.409,3.754c-0.1-0.1-0.234-0.155-0.376-0.155c-0.141,0-0.275,0.055-0.375,0.155L3.403,6.011c-0.208,0.207-0.208,0.543,0,0.751l0.556,0.556C3.804,7.622,3.673,7.935,3.567,8.257H2.782c-0.294,0-0.531,0.238-0.531,0.531v3.19c0,0.295,0.237,0.531,0.531,0.531h0.787c0.105,0.318,0.236,0.631,0.391,0.938l-0.556,0.559c-0.208,0.207-0.208,0.545,0,0.752l2.254,2.254c0.208,0.207,0.544,0.207,0.751,0l0.558-0.559c0.303,0.154,0.616,0.285,0.938,0.391v0.787c0,0.293,0.238,0.531,0.531,0.531h3.191c0.295,0,0.531-0.238,0.531-0.531v-0.787c0.322-0.105,0.636-0.236,0.938-0.391l0.56,0.559c0.208,0.205,0.546,0.207,0.752,0l2.252-2.254c0.208-0.207,0.208-0.545,0.002-0.752l-0.559-0.559c0.153-0.303,0.285-0.615,0.389-0.938h0.789c0.295,0,0.532-0.236,0.532-0.531v-3.19C17.812,8.495,17.574,8.257,17.279,8.257z M16.747,11.447h-0.653c-0.241,0-0.453,0.164-0.514,0.398c-0.129,0.496-0.329,0.977-0.594,1.426c-0.121,0.209-0.089,0.473,0.083,0.645l0.463,0.465l-1.502,1.504l-0.465-0.463c-0.174-0.174-0.438-0.207-0.646-0.082c-0.447,0.262-0.927,0.463-1.427,0.594c-0.234,0.061-0.397,0.271-0.397,0.514V17.1H8.967v-0.652c0-0.242-0.164-0.453-0.397-0.514c-0.5-0.131-0.98-0.332-1.428-0.594c-0.207-0.123-0.472-0.09-0.646,0.082l-0.463,0.463L4.53,14.381l0.461-0.463c0.169-0.172,0.204-0.434,0.083-0.643c-0.266-0.461-0.467-0.939-0.596-1.43c-0.06-0.234-0.272-0.398-0.514-0.398H3.313V9.319h0.652c0.241,0,0.454-0.162,0.514-0.397c0.131-0.498,0.33-0.979,0.595-1.43c0.122-0.208,0.088-0.473-0.083-0.645L4.53,6.386l1.503-1.504l0.46,0.462c0.173,0.172,0.437,0.204,0.646,0.083c0.45-0.265,0.931-0.464,1.433-0.597c0.233-0.062,0.396-0.274,0.396-0.514V3.667h2.128v0.649c0,0.24,0.161,0.452,0.396,0.514c0.502,0.133,0.982,0.333,1.433,0.597c0.211,0.12,0.475,0.089,0.646-0.083l0.459-0.462l1.504,1.504l-0.463,0.463c-0.17,0.171-0.202,0.438-0.081,0.646c0.263,0.448,0.463,0.928,0.594,1.427c0.061,0.235,0.272,0.397,0.514,0.397h0.651V11.447z">
+                                </path>
+                            </svg>
+                        </p>
+
+                        <!-- The Modal -->
+                        <div id="ModalUpgrade" class="modal">
+
+                            <!-- Modal content -->
+                            <div class="modal-contents">
+
+                                <span class="closeUp">&times;</span>
+                                <div>
+                                    <p>Hello</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="cad-flex">
+                    <div>
+                        <img id="car" src="suvExt.png">
+                    </div>
+
+                    <center>
+                        <div class="colors">
+                            <button class="red" onclick="redBtnSv()">o</button>
+                            <button class="blue" onclick="bluBtnSv()">o</button>
+                            <button class="silver" onclick="silBtnSv()">o</button>
+
+                        </div>
+                    </center>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+    <div class="exter">
+        <div>
+            <h1>Exterior</h1>
+            <div class="extSlideShow">
+                <div class="eSlide">
+                    <img class="img" src="https://cdn.pixabay.com/photo/2013/07/21/13/00/rose-165819__340.jpg">
+                    <p class="caption">Caption A</p>
+                </div>
+                <div class="eSlide">
+                    <img class="img"
+                        src="https://image.shutterstock.com/image-photo/colorful-flower-on-dark-tropical-260nw-721703848.jpg">
+                    <p class="caption">Caption B</p>
+                </div>
+                <div class="eSlide">
+                    <img class="img"
+                        src="https://images.pexels.com/photos/459225/pexels-photo-459225.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500">
+                    <p class="caption">Caption C</p>
+                </div>
+                <div class="eSlide">
+                    <img class="img"
+                        src="https://images.unsplash.com/photo-1494548162494-384bba4ab999?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1000&q=80">
+                    <p class="caption">Caption D</p>
+                </div>
+                <div class="eSlide">
+                    <img class="img" src="https://cdn.pixabay.com/photo/2015/02/24/15/41/dog-647528__340.jpg">
+                    <p class="caption">Caption E</p>
+                </div>
+            </div>
+        </div>
+        <div>
+            <h1>Interior</h1>
+            <div class="intSlideShow">
+                <div class="iSlide">
+                    <img class="img" src="https://cdn.pixabay.com/photo/2015/02/24/15/41/dog-647528__340.jpg">
+                    <p class="caption">Caption 1</p>
+                </div>
+                <div class="iSlide">
+                    <img class="img"
+                        src="https://images.unsplash.com/photo-1494548162494-384bba4ab999?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1000&q=80">
+                    <p class="caption">Caption 2</pclass="caption">
+                </div>
+                <div class="iSlide">
+                    <img
+                        src="https://images.pexels.com/photos/459225/pexels-photo-459225.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500">
+                    <p class="caption">Caption 3</p>
+                </div>
+                <div class="iSlide">
+                    <img class="img"
+                        src="https://image.shutterstock.com/image-photo/colorful-flower-on-dark-tropical-260nw-721703848.jpg">
+                    <p class="caption">Caption 4</p>
+                </div>
+                <div class="iSlide">
+                    <img class="img" src="https://cdn.pixabay.com/photo/2013/07/21/13/00/rose-165819__340.jpg">
+                    <p class="caption">Caption 5</pclass="caption">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="spec">
+        <h1>Specifications</h1>
+        <div class="spec-flex">
+            <div>
+                <img id="car-spec" src="suvExt.png">
+            </div>
+            <div>
+                <div class="topic">
+                    <div class="key">
+                        <p>Battery: </p>
+                    </div>
+                    <div class="bk">
+                        <p class="object">Text</p>
+                    </div>
+                </div>
+
+                <div class="topic">
+                    <div class="key">
+                        <p>Acceleration: </p>
+                    </div>
+                    <div class="bk">
+                        <p class="object">Text</p>
+                    </div>
+                </div>
+
+                <div class="topic">
+                    <div class="key">
+                        <p>Range: </p>
+                    </div>
+                    <div class="bk">
+                        <p class="object">Text</p>
+                    </div>
+                </div>
+
+                <div class="topic">
+                    <div class="key">
+                        <p>Seating: </p>
+                    </div>
+                    <div class="bk">
+                        <p class="object">Text</p>
+                    </div>
+                </div>
+
+                <div class="topic">
+                    <div class="key">
+                        <p>Wheels: </p>
+                    </div>
+                    <div class="bk">
+                        <p class="object">Text</p>
+                    </div>
+                </div>
+
+                <div class="topic">
+                    <div class="key">
+                        <p>Weight: </p>
+                    </div>
+                    <div class="bk">
+                        <p class="object">Text</p>
+                    </div>
+                </div>
+
+                <div class="topic">
+                    <div class="key">
+                        <p>Cargo: </p>
+                    </div>
+                    <div class="bk">
+                        <p class="object">Text</p>
+                    </div>
+                </div>
+
+                <div class="topic">
+                    <div class="key">
+                        <p>Displays: </p>
+                    </div>
+                    <div class="bk">
+                        <p class="object">Text</p>
+                    </div>
+                </div>
+
+                <div class="topic">
+                    <div class="key">
+                        <p>Charger Wattage: </p>
+                    </div>
+                    <div class="bk">
+                        <p class="object">Text</p>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+
+    </div>
+</body>
+
+</html>
+<script src="modal.js"></script>
+<script src="image_rep.js"></script>
+<script src="slide.js"></script>

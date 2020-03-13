@@ -1,0 +1,188 @@
+/* Model 1-3 */
+
+/* color buttons*/
+#car{
+    width:100%;
+    padding:15px;
+    margin:auto;
+    height:500px;
+    background-color: rgb(205, 255, 224);
+}
+
+
+.car-buttons{
+    text-align:center;
+    margin:10px;
+}
+
+.red{
+    background-color:red;
+    border-radius:50%;
+    margin: 0 10px;
+    color:red;
+    height: 64px;
+    width: 64px;
+}
+
+.blue{
+    background-color:royalblue;
+    border-radius:50%;
+    margin:0 10px;
+    color:royalblue;
+    height: 64px;
+    width: 64px;
+}
+
+.black{
+    background-color: black; 
+    color: black;
+    border-radius:50%;
+    margin:0 10px;
+    height: 64px;
+    width: 64px;
+
+}
+
+.silver{
+    background-color:silver;
+    border-radius:50% 50%;
+    margin: 0 10px;
+    color:silver;
+    height: 64px;
+    width: 64px;
+}
+
+.colors{
+  border:none;
+  color:white;
+  padding:auto;
+  text-decoration:none;
+  display:inline-block;
+  font-size:10px;
+  margin:4px 2px;
+  justify-self: space-around;
+  
+}
+
+
+/* Overview */
+
+.specs-flex{
+    display:flex;
+    flex-direction:row;
+    flex:wrap;
+}
+
+.specs-flex > div{
+    margin:10px;
+    text-align:center;
+    padding:20px;
+    flex:wrap;
+    justify-content: space-evenly;
+}
+.cad-flex{
+    display:flex;
+    flex-direction:column;
+    flex:wrap;
+    width:100%;
+}
+.cad-flex > div{
+    text-align:left;
+    flex:wrap;
+}
+.speec{
+    background-color: grey;
+    color: black;
+    height:75px;
+    justify-content: space-evenly;
+    justify-self: center;
+    width: 100px;
+    border-radius: 25%;
+    padding:5px;
+}
+.feature{
+    justify-content:space-around ;
+    margin:50px 0 ;
+}
+
+#car-spec{
+    width:100%;
+    padding:0;
+    margin:auto;
+    height:500px;
+}
+
+.svg-icon {
+    width: 30px;
+    height: 30px;
+  }
+  
+  .svg-icon path,
+  .svg-icon polygon,
+  .svg-icon rect {
+    fill:white;
+  }
+  
+  .svg-icon circle {
+    stroke:black;
+    stroke-width: 1;
+  }
+
+
+/* slideshow */
+.caption{
+    border:solid black;
+    color:white;
+    background-color:#000000;
+    width:500px;
+    height:50px;
+    
+}
+
+.inter{
+    color: white;
+}
+.img{
+    height:500px;
+    width:500px;
+}
+.exter{
+    display: flex;
+    flex-direction: row;
+    width:100%;
+    justify-content: space-around;
+    color:white;
+}
+
+
+/* Spec */
+.spec-flex{
+    display:flex;
+    flex-direction:row;
+    flex:wrap;
+    justify-content: space-evenly;
+    color:white;
+}
+
+.spec-flex > div{
+    margin:10px;
+    text-align:center;
+    padding:20px;
+    flex:wrap;
+}
+
+.info-flex{
+    display:flex;
+    flex-direction: column;
+}
+
+.info-flex > div{
+    margin:5px;
+    text-align:center;
+    padding:5px;
+    flex:wrap;
+}
+
+.spec{
+    color:white;
+}
