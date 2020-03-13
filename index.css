@@ -1,20 +1,25 @@
 /* Testing */
 /* Style tab links */
 
-.chapter_content {
-	background-color: red;
-	height: auto;
-	margin: 0;
-}
-
 body {
   margin: 0;
   font-size: 28px;
   font-family: Arial, Helvetica, sans-serif;
 }
 
+.chapter_content {
+	background-color: white;
+	height: auto;
+	margin: 0;
+}
+
 .chapter_content h1 {
 	padding: 20px;
+}
+
+.chapter_content p {
+	line-height: 30px;	
+	font-size: 20px;
 }
 
 .intro {
@@ -80,7 +85,7 @@ body {
 
 /* make each section taller and give them different colors */
 .content {
-  background-color: red;
+  background-color: white;
   height: auto;
   margin: 0;
 }
@@ -91,32 +96,66 @@ body {
 
 /* About Us */
 #section1 {
-  background-color: red;
+  background-color: white;
   z-index: 10;
-  
+}
+
+.tsa_desc {
+	padding: 50px;
+}
+.tsa_desc h1 {
+	font-size: 100px;
+	margin: 0;
+}
+
+.tsa_desc p {
+	padding-bottom: 20px;
+	padding-left: 20px;
+	padding-right: 20px;
+	line-height: 50px;
+	font-size: 25px;
 }
 
 #about_grid {
 	display: grid;
 	grid-template-columns: 50% 50%;
-	grid-template-rows: auto auto;
+	grid-template-rows: auto;
 }
 
 .slideshow {
+	display: grid;
+	align-self: center;
 	width: 100%;
-	border: solid 10px black;
+	height: auto;
+	border: 3px solid black;
 	
 }
+
 #values {
+	display: grid;
 	width: 100%;
-	background-color: blue;
-	border: solid 10px blue;
+	background-color: white;
+	grid-gap: 0px 5px;
+}
+
+#values h2 {
+}
+
+#values p {
+	font-size: 15px;
+	line-height: 25px;
+}
+
+.val_container {
+	margin-left: 10px;
+	margin-right: 10px;
 }
 
 #officers {
 	grid-column: 1 / 4;
-	background-color: magenta;
-	grid-row: 500px;
+	background-color: white;
+	margin-top: 120px;
+	margin-bottom: 120px;
 }
 
 /* Caurosel Code 
@@ -131,7 +170,7 @@ body {
 #officer_grid {
 	display: grid;
 	grid-template-columns: 1fr 1fr 1fr 1fr;
-	background-color: magenta;
+	background-color: white;
 	justify-items: center;
 	align-items: center;
 	padding: 50px;
@@ -147,8 +186,7 @@ body {
 
 .officer_desc {
 	grid-gap: 20px 0px;
-	background-color: orange;
-	border: 2px solid red;
+	background-color: white;
 }
 
 .officer_desc h4 {
@@ -159,19 +197,21 @@ body {
 }
 
 #section2 {
-  background-color: lightblue;
+  background-image: linear-gradient(#FFFFFF, #6AB4FF);
   height: auto;
+  margin: 0px;
+  padding: 0px;
 }
 
-#Home {background-color: red;}
-#Competitions {background-color: green;}
-#Outreach {background-color: blue;}
+#Home {}
+#Competitions {}
+#Outreach {}
 
 .tablink {
-  background-color: #555;
-  color: white;
+  background-color: white;
+  color: black;
   float: left;
-  border: none;
+  border: 2px solid #ED3725;
   outline: none;
   cursor: pointer;
   padding: 14px 16px;
@@ -180,12 +220,14 @@ body {
 }
 
 .tablink:hover {
-  background-color: #777;
+  background-color: #ED3725;
+  border: 2px solid white;
+  color: white;
 }
 
 /* Style the tab content (and add height:100% for full page content) */
 .tabcontent {
-  color: white;
+  color: black;
   display: none;
   padding: 100px 20px;
   height: 100%;
@@ -199,17 +241,19 @@ body {
 	align-items: center;
 }
 
-.schedule_table td{
-	padding: 10px;
-	border-bottom: 2px solid black; 
+.schedule_table {
 	text-align: center;
+}
+
+.schedule_table td{
+	padding: 19px;
+	border-bottom: 2px solid black; 
 	font-size: 15px;
 }
 
 .schedule_table th {
-	padding: 10px;
+	padding: 20px;
 	border-bottom: 5px solid black; 
-	text-align: center;
 	font-size: 25px;
 }
 
@@ -230,8 +274,14 @@ body {
 }
 
 #section3 {
-  background-color: lightgreen;
-  height: auto;
+	background-image: linear-gradient(#6AB4FF, #000066);  
+	height: auto;
+	margin: 0px;
+	padding: 0px;
+}
+
+#section3 h1 {
+	font-size: 60px;
 }
 
 .on_hist_grid {
@@ -271,7 +321,7 @@ body {
   position: absolute;
   width: 25px;
   height: 25px;
-  right: -11px;
+  right: -12px;
   background-color: white;
   border: 4px solid #FF9F55;
   top: 15px;
@@ -434,6 +484,7 @@ body {
 }
 
 .inline-photo {
+  background-color: white;
   display: flex;
   flex-direction: column;
   border: 1em solid #fff;
@@ -456,8 +507,12 @@ body {
 }
 
 #section4 {
-	background-color: cyan;
+	background-color: white;
 	height: auto;
+}
+
+#section4 h3 {
+	font-size: 40px;
 }
 
 .class_grid {
@@ -537,12 +592,17 @@ body {
 }
 
 /* Several different images */
-.bg-one {background-image: url(https://media.timeout.com/images/101602611/image.jpg);}
+.bg-one {background-image: url(cad.jpg);}
+.bg-two {background-image: url(woodworking.jpg);}
+.bg-three {background-image: url(business.jpeg);}
+.bg-four {background-image: url(computers.jpg);}
+.bg-five {background-image: url(digital_design.png);}
+.bg-six {background-image: url(film.jpg);}
 
 #teacher_row_one {
 	display: grid;
 	grid-template-columns: 1fr 1fr 1fr;
-	background-color: orange;
+	background-color: white;
 	justify-items: center;
 	align-items: center;
 	padding: 20px;
@@ -551,18 +611,19 @@ body {
 
 #teacher_row_two {
 	display: grid;
-	grid-template-columns: 1fr 1fr;
-	background-color: yellow;
+	grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+	background-color: white;
 	justify-items: center;
 	align-items: center;
 	padding: 20px;
-	grid-gap: 0px 0px;	
+	grid-gap: 20px 0px;	
 }
 
 .teacher_desc {
 	grid-gap: 20px 0px;
-	background-color: orange;
+	background-color: white;
 	border: 2px solid red;
+
 }
 
 
@@ -576,7 +637,7 @@ body {
 /* Facilities */
 
 .facilities {
-	background-color: #191970;
+	background-color: white;
 	padding: 20px;
 }
 .fheading {

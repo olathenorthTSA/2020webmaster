@@ -20,13 +20,13 @@ document.addEventListener("DOMContentLoaded", () => {
       ref = "#section" + ref[1];
       // ie 11 does not support smooth scroll, so we will simply scroll
       if (isIE11) {
-        window.scrollTo(0, document.querySelector(ref).offsetTop);
+        window.scrollTo(0, (document.querySelector(ref).offsetTop));
       } else {
         window.scroll({
           behavior: 'smooth',
           left: 0,
           // top gets the distance from the top of the page of our target element
-          top: document.querySelector(ref).offsetTop
+          top: (document.querySelector(ref).offsetTop - 60)
         });
       }
     })
