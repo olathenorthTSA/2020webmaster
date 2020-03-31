@@ -1,0 +1,20 @@
+.bar {
+	fill: steelblue;
+}
+.sideFlex{
+    display:flex;
+    flex-direction:row;
+    flex:wrap;
+  
+    height:100%;
+    width:100%;
+  
+}
+
+.graph-flex{
+	display:flex;
+    flex-direction:row;
+    justify-content: center;
+    
+	
+}
