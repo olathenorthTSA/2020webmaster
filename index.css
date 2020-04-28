@@ -281,6 +281,10 @@ body {
 	line-height: 55px;
 }
 
+.gen_grid img {
+	border: 2px solid black;
+}
+
 .gen_title {
 	font-size: 25px;
 }
@@ -301,6 +305,7 @@ body {
 	color: white;
 	padding: 0px;
 	margin: 0px;
+	text-shadow: 2px 0 0 #000;
 }
 
 .on_hist_grid {
@@ -462,6 +467,7 @@ body {
 }
 
 .awards_pic {
+	border: 2px solid black;
 }
 
 .awards_title {
@@ -531,7 +537,7 @@ body {
 }
 
 #section4 h3 {
-	font-size: 40px;
+	font-size: 60px;
 	padding: 20px;
 }
 
@@ -622,8 +628,12 @@ body {
 
 #section5 {}
 
+#section5 img {
+	border: 2px solid black;
+}
+
 #section5 h3{
-	font-size: 40px;
+	font-size: 60px;
 	padding: 20px
 }
 
